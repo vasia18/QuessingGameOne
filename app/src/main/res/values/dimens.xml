@@ -2,6 +2,8 @@
 <resources>
 
     <dimen name="textSize">25sp</dimen>
+    <dimen name="radiusButton">20sp</dimen>
+    <dimen name="strokeButton">2dp</dimen>
 
 
 </resources>

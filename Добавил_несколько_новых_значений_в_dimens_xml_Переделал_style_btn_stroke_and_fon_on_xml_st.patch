@@ -1,0 +1,147 @@
+Index: app/src/main/res/drawable/button_stroke_press_white.xml
+===================================================================
+--- app/src/main/res/drawable/button_stroke_press_white.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
++++ app/src/main/res/drawable/button_stroke_press_white.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
+@@ -1,4 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<shape xmlns:android="http://schemas.android.com/apk/res/android">
+-
+-</shape>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
++++ .idea/gradle.xml	(date 1612550706000)
+@@ -7,7 +7,6 @@
+         <option name="testRunner" value="PLATFORM" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleJvm" value="12" />
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
++++ .idea/vcs.xml	(date 1612550706000)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: app/src/main/res/drawable/style_btn_stroke_and_fon_on.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/style_btn_stroke_and_fon_on.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
++++ app/src/main/res/drawable/style_btn_stroke_and_fon_on.xml	(date 1612552260000)
+@@ -2,9 +2,9 @@
+ <shape xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+     <stroke
+-        android:width="2dp"
++        android:width="@dimen/strokeButton"
+         android:color="@color/ButtonColorStroke" />
+     <solid android:color="@color/ButtonColorFon" />
+-    <corners android:radius="10dp" />
++    <corners android:radius="@dimen/radiusButton" />
+ 
+ </shape>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
++++ app/src/main/res/layout/activity_main.xml	(date 1612552313000)
+@@ -1,6 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+@@ -31,21 +30,25 @@
+ 
+ 
+     <LinearLayout
+-        android:id="@+id/start_LinearLayout"
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
++        android:id="@+id/start_Layout"
++        android:layout_width="wrap_content"
++        android:layout_height="100dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+-        android:orientation="horizontal">
++        android:orientation="horizontal"
++        android:padding="10dp">
+ 
+         <Button
+-
+             android:id="@+id/button_start"
+-            android:layout_weight="1"
++            android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:layout_width="wrap_content"
+-            />
+-
++            android:layout_weight="1"
++            android:background="@drawable/style_btn_press_on"
++            android:paddingLeft="30dp"
++            android:paddingRight="30dp"
++            android:text="@string/button_start_1"
++            android:textColor="@color/white"
++            android:textSize="25sp" />
+ 
+ 
+     </LinearLayout>
+Index: app/src/main/res/drawable-hdpi/style_btn_stroke_and_fon_press.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable-hdpi/style_btn_stroke_and_fon_press.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
++++ app/src/main/res/drawable-hdpi/style_btn_stroke_and_fon_press.xml	(date 1612552278000)
+@@ -2,9 +2,9 @@
+ <shape xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+     <stroke
+-        android:width="2dp"
++        android:width="@dimen/strokeButton"
+         android:color="@color/ButtonColorStroke" />
+-    <corners android:radius="10dp" />
++    <corners android:radius="@dimen/radiusButton" />
+     <solid android:color="@color/ButtonColorStroke" />
+ 
+ </shape>
+\ No newline at end of file
+Index: app/src/main/res/values/dimens.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/dimens.xml	(revision 81155437858aa42ff9790f86d6dbea0495d7c43d)
++++ app/src/main/res/values/dimens.xml	(date 1612552313000)
+@@ -2,6 +2,8 @@
+ <resources>
+ 
+     <dimen name="textSize">25sp</dimen>
++    <dimen name="radiusButton">20sp</dimen>
++    <dimen name="strokeButton">2dp</dimen>
+ 
+ 
+ </resources>
+\ No newline at end of file
