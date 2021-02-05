@@ -1,14 +1,19 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.QuessingGameOne" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+    <style name="Theme.GuessingGameOne" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Основной фирменный цвет -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorPrimaryVariant">@color/colorAccent</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+
+        <!-- Убрать строку состояния на телефоне
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item> -->
+
+        <!-- Задать вторичный фирменный цвет
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+         Цвет строки состояния
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item> -->
     </style>
 </resources>

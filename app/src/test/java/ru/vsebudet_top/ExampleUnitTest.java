@@ -1,4 +1,4 @@
-package ru.vsebudettop;
+package ru.vsebudet_top;
 
 import org.junit.Test;
 

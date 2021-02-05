@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#95ffffff</color>
-    <color name="colorBlack">#000000</color>
     <color name="ButtonColorFon">#FF6719</color>
     <color name="ButtonColorStroke">#A83900</color>
 </resources>
