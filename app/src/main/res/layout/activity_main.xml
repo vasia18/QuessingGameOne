@@ -31,9 +31,9 @@
 
 
     <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal">
@@ -41,12 +41,9 @@
 
         <Button
             android:id="@+id/button_start"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
+            style="@style/StyleButton"
             android:text="@string/start_1" />
 
-
     </LinearLayout>
-
 
 </RelativeLayout>

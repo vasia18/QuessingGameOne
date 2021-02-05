@@ -6,16 +6,26 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowFullscreen">true</item>
+        //Растинуть окно на весь экран.
+        <item name="android:windowContentOverlay">@null</item>
+        //Информация которая будет перекрывать окно со значением ноль(ничто перекрывать окно не
+        будет).
+        <item name="android:windowNoTitle">true</item>
+        //Нез заголовка у окна (значение true).
     </style>
 
     <style name="StyleButton" parent="AppTheme">
+
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_width">168dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">16dp</item>
-        <item name="android:textSize">25dp</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:textSize">@dimen/textSize</item>
         <item name="android:paddingRight">10dp</item>
         <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/style_btn_press_on</item>
 
     </style>
 
