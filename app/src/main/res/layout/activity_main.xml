@@ -31,18 +31,22 @@
 
 
     <LinearLayout
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
-
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <Button
-            android:id="@+id/button_start"
-            style="@style/StyleButton"
-            android:text="@string/start_1" />
+            android:id="@+id/buttonSrart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/style_btn_press_on"
+            android:text="@string/button_start_1" />
+
 
     </LinearLayout>
 

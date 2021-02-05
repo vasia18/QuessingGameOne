@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">QuessingGameOne</string>
     <string name="fon">fon</string>
-    <string name="start_1">начать</string>
+    <string name="button_start_1">начать</string>
 </resources>

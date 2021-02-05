@@ -16,8 +16,8 @@
         //Нез заголовка у окна (значение true).
     </style>
 
-    <style name="StyleButton" parent="AppTheme">
 
+    <style name="StyleButton">
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_width">168dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -25,7 +25,7 @@
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:paddingRight">10dp</item>
         <item name="android:paddingLeft">10dp</item>
-        <item name="android:background">@drawable/style_btn_press_on</item>
+
 
     </style>
 

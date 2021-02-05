@@ -3,6 +3,4 @@
 
     <item android:drawable="@drawable/style_btn_stroke_and_fon_on" android:state_pressed="false" />
     <item android:drawable="@drawable/style_btn_stroke_and_fon_press" android:state_pressed="true" />
-
-
 </selector>
