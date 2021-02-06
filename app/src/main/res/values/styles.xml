@@ -6,10 +6,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
     </style>
-    <!-- Растинуть окно на весь экран.
+
+    <!-- Убрать строку состояния на телефоне
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">true</item>
+
+// Растинуть окно на весь экран.
 <item name="android:windowFullscreen">true/</item>
 <item name="android:windowContentOverlay">@null/</item>
 
