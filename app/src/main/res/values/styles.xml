@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -21,9 +21,10 @@
 
     <style name="StyleButton" parent="AppTheme">
         <item name="android:background">@drawable/style_btn_press_on</item>
-        <item name="android:paddingLeft">30dp</item>
-        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft</item>
+        <item name="android:paddingRight">@dimen/paddingRight</item>
         <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/textSize</item>
     </style>
 
 </resources>

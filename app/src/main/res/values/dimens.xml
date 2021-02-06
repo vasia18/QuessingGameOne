@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="textSize">25sp</dimen>
+    <dimen name="textSize">30sp</dimen>
     <dimen name="radiusButton">20sp</dimen>
     <dimen name="strokeButton">2dp</dimen>
+    <dimen name="paddingRight">40dp</dimen>
+    <dimen name="paddingLeft">40dp</dimen>
 
 
 </resources>

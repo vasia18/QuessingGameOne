@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/main_background_image" />
+        app:srcCompat="@drawable/game_levels_background_image" />
 
     <LinearLayout
         android:id="@+id/container_1"
@@ -28,6 +28,7 @@
 
             <ScrollView
                 android:layout_width="match_parent"
+                android:
                 android:layout_height="match_parent">
 
                 <LinearLayout
