@@ -3,8 +3,8 @@
 
     <stroke
         android:width="@dimen/strokeButton"
-        android:color="@color/ButtonColorStroke" />
-    <solid android:color="@color/ButtonColorFon" />
+        android:color="@color/colorButtonStroke" />
+    <solid android:color="@color/colorButtonFon" />
     <corners android:radius="@dimen/radiusButton" />
 
 </shape>

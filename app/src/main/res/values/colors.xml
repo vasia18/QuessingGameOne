@@ -5,7 +5,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#95ffffff</color>
-    <color name="ButtonColorFon">#FF6719</color>
-    <color name="ButtonColorStroke">#A83900</color>
+    <color name="colorButtonFon">#FF6719</color>
+    <color name="colorButtonStroke">#A83900</color>
 </resources>
 
