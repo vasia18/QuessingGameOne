@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class GameLevelActvity extends AppCompatActivity {
+public class GameLevelActivity extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,24 +27,21 @@ public class GameLevelActvity extends AppCompatActivity {
 				// Здесь будет команда для кнопки.
 				// Начало конструкции
 				try {
-					Intent intent = new Intent(GameLevelActvity.this, MainActivity.class);
+					Intent intent = new Intent(GameLevelActivity.this, MainActivity.class);
 					startActivity(intent);
 					finish();
 				} catch (Exception e) {
 				}
 			}
-
-
 		});
 	}
 
-	// Системная кнопка НАЧАЛО
-
+	// Системная кнопка "Назад" начало
 	@Override
 	public void onBackPressed() {
 		// Начало конструкции try{
 		try {
-			Intent intent = new Intent(GameLevelActvity.this, MainActivity.class);
+			Intent intent = new Intent(GameLevelActivity.this, MainActivity.class);
 			startActivity(intent);
 			finish();
 		} catch (Exception e) {
@@ -52,6 +49,5 @@ public class GameLevelActvity extends AppCompatActivity {
 		//Конец конструкции }catch
 		super.onBackPressed();
 	}
-
-	// Системная кнопка КОНЕЦ
+	// Системная кнопка "Назад" конец
 }

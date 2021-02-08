@@ -6,10 +6,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+	private long backPressedTime; // Создаем переменную
+	private Toast backToast;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 				try {
 					// Прописываем с какого Activity на какое Activity будет переходить при нажатии на кнопку
 					Intent intent = new Intent(MainActivity.this,
-							GameLevelActvity.class);
+							GameLevelActivity.class);
 					startActivity(intent);
 					finish();
 				} catch (Exception e) {
@@ -30,11 +34,29 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 
-
 		//Убрать строку состояния на телефоне
 		Window w = getWindow();
 		w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
 	}
+
+	// Системная кнопка покинуть приложение НАЧАЛО
+	// Ctrl+O
+	@Override
+	public void onBackPressed() {
+
+		if (backPressedTime + 2000 > System.currentTimeMillis()) {
+			backToast.cancel();
+			// То выполнится этот код
+			super.onBackPressed(); //Эта команда закрывает игру
+			return;
+		} else { // ИНАЧЕ выполнится другой код
+			backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз чтобы выйти", Toast.LENGTH_SHORT);
+			backToast.show();
+		}
+
+		backPressedTime = System.currentTimeMillis();
+	}
+
+// Системная кнопка покинуть приоложение КОНЕЦ
 
 }

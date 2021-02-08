@@ -5,5 +5,35 @@
     <string name="image_boy">boy</string>
     <string name="start_1">начать</string>
     <string name="back">назад</string>
+    <string name="btn_one">1</string>
+    <string name="btn_two">2</string>
+    <string name="btn_free">3</string>
+    <string name="btn_fore">4</string>
+    <string name="btn_five">5</string>
+    <string name="btn_six">6</string>
+    <string name="btn_seven">7</string>
+    <string name="btn_eight">8</string>
+    <string name="btn_nine">9</string>
+    <string name="btn_ten">10</string>
+    <string name="btn_eleven">11</string>
+    <string name="btn_twelve">12</string>
+    <string name="btn_thirteen">13</string>
+    <string name="btn_fourteen">14</string>
+    <string name="btn_fifteen">15</string>
+    <string name="btn_sixteen">16</string>
+    <string name="btn_seventeen">17</string>
+    <string name="btn_eighteen">18</string>
+    <string name="btn_nineteen">19</string>
+    <string name="btn_twenty">20</string>
+    <string name="btn_twentyOne">21</string>
+    <string name="btn_twentyTwo">22</string>
+    <string name="btn_twentyFree">23</string>
+    <string name="btn_twentyFore">24</string>
+    <string name="btn_twentyFive">25</string>
+    <string name="btn_twentySix">26</string>
+    <string name="btn_twentySeven">27</string>
+    <string name="btn_twentyEight">28</string>
+    <string name="btn_twentyNine">29</string>
+    <string name="btn_thirty">30</string>
 
 </resources>
