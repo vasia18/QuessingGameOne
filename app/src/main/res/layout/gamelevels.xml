@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <ImageView
@@ -26,17 +26,6 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:id="@+id/container_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical" />
-            </ScrollView>
-
             <LinearLayout
                 android:id="@+id/container_3"
                 android:layout_width="match_parent"
@@ -48,8 +37,255 @@
                     style="@style/StyleButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/back" />
+                    android:text="@string/back"
+                    android:textAllCaps="false" />
             </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/container_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="1" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="2" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="3" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="4" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            style="@style/StyleButton_GameLevels"
+
+                            android:text="5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="6" />
+
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="7" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="8" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="9" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="10" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="11" />
+
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="12" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="13" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="14" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="16" />
+
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="17" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="18" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="19" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="21" />
+
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="22" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="23" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="24" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="25" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="26" />
+
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="27" />
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="28" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="29" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            style="@style/StyleButton_GameLevels"
+                            android:layout_marginRight="15dp"
+                            android:text="30" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

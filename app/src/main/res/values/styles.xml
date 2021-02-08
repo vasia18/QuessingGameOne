@@ -25,6 +25,18 @@
         <item name="android:paddingRight">@dimen/paddingRight</item>
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StyleButton_GameLevels" parent="AppTheme">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/style_btn_gamelevels_press_on</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">@dimen/gameLevelsTextView_layout_height</item>
+        <item name="android:layout_width">@dimen/gameLevelsTextView_layout_width</item>
+        <item name="android:gravity">center</item>
+
     </style>
 
 </resources>

@@ -7,5 +7,9 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorButtonFon">#FF6719</color>
     <color name="colorButtonStroke">#A83900</color>
+    <color name="colorButtonFon1">#2FBFF9</color>
+    <color name="colorButtonFon1_60">#602FBFF9</color>
+    <color name="colorButtonStroke1">#316FC6</color>
+    <color name="colorButtonStroke1_60">#60316FC6</color>
 </resources>
 
