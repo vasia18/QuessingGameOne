@@ -28,6 +28,8 @@ public class GameLevelActvity extends AppCompatActivity {
 				// Начало конструкции
 				try {
 					Intent intent = new Intent(GameLevelActvity.this, MainActivity.class);
+					startActivity(intent);
+					finish();
 				} catch (Exception e) {
 				}
 			}
@@ -35,4 +37,21 @@ public class GameLevelActvity extends AppCompatActivity {
 
 		});
 	}
+
+	// Системная кнопка НАЧАЛО
+
+	@Override
+	public void onBackPressed() {
+		// Начало конструкции try{
+		try {
+			Intent intent = new Intent(GameLevelActvity.this, MainActivity.class);
+			startActivity(intent);
+			finish();
+		} catch (Exception e) {
+		}
+		//Конец конструкции }catch
+		super.onBackPressed();
+	}
+
+	// Системная кнопка КОНЕЦ
 }
