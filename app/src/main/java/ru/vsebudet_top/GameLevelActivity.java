@@ -21,7 +21,7 @@ public class GameLevelActivity extends AppCompatActivity {
 		w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 		Button button_back = (Button) findViewById(R.id.button_back);
-		button_back.setOnClickListener(new View.OnClickListener() {// Вешаем слушатель на кнопку.
+		button_back.setOnClickListener(new View.OnClickListener() {  // Вешаем слушатель на кнопку.
 			@Override
 			public void onClick(View v) {
 				// Здесь будет команда для кнопки.
@@ -31,6 +31,7 @@ public class GameLevelActivity extends AppCompatActivity {
 					startActivity(intent);
 					finish();
 				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
 		});
@@ -45,6 +46,7 @@ public class GameLevelActivity extends AppCompatActivity {
 			startActivity(intent);
 			finish();
 		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		//Конец конструкции }catch
 		super.onBackPressed();

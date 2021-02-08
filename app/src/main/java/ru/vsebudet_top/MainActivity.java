@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 					startActivity(intent);
 					finish();
 				} catch (Exception e) {
+					e.printStackTrace();
 				} // Конец конструкции
 			}
 		});
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 			backToast.show();
 		}
 
-		backPressedTime = System.currentTimeMillis();
+		backPressedTime = System.currentTimeMillis(); // Здесь мы используем переменную которую написал выше.
 	}
 
 // Системная кнопка покинуть приоложение КОНЕЦ
