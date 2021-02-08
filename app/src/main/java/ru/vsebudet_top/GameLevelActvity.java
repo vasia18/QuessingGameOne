@@ -13,8 +13,6 @@ public class GameLevelActvity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gamelevels);
 
-
-
 		//Убрать строку состояния на телефоне
 		Window w = getWindow();
 		w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
