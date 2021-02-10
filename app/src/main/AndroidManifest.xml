@@ -20,7 +20,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ru.vsebudet_top.GameLevelActivity"
+            android:name=".GameLevelActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LevelActivity1"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
