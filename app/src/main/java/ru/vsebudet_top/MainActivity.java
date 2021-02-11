@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 	// Ctrl+O
 	@Override
 	public void onBackPressed() {
-
 		if (backPressedTime + 2000 > System.currentTimeMillis()) {
 			backToast.cancel();
 			// То выполнится этот код
@@ -54,10 +53,7 @@ public class MainActivity extends AppCompatActivity {
 			backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз чтобы выйти", Toast.LENGTH_SHORT);
 			backToast.show();
 		}
-
 		backPressedTime = System.currentTimeMillis(); // Здесь мы используем переменную которую написал выше.
 	}
-
 // Системная кнопка покинуть приоложение КОНЕЦ
-
 }

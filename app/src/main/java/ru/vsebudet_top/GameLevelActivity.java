@@ -21,7 +21,7 @@ public class GameLevelActivity extends AppCompatActivity {
 		Window w = getWindow();
 		w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-		Button button_back = (Button) findViewById(R.id.button_back);
+		Button button_back = findViewById(R.id.button_back);
 		button_back.setOnClickListener(new View.OnClickListener() {  // Вешаем слушатель на кнопку.
 			@Override
 			public void onClick(View v) {
@@ -37,16 +37,16 @@ public class GameLevelActivity extends AppCompatActivity {
 			}
 		});
 		//Кнопка для перехода на 1 уровень НАЧАЛО
-		TextView textView1 = (TextView) findViewById(R.id.textView1);
+		TextView textView1 = findViewById(R.id.textView1);
 		textView1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				try {
-					Intent intent1 = new Intent(GameLevelActivity.this, LevelActivity1.class);
+					Intent intent1 = new Intent(GameLevelActivity.this, Level2.class);
 					startActivity(intent1);
 					finish();
 				} catch (Exception e) {
-					// Пусто e.printStackTrace();
+					e.printStackTrace();
 				}
 			}
 		});  // Кнопка для перехода на 1 уровень КОНЕЦ
