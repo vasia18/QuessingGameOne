@@ -19,16 +19,19 @@
 //Информация которая будет перекрывать окно со значением ноль(ничто перекрывать окно не будет).
 <item name="android:windowNoTitle">true/item //Нез заголовка у окна (значение true).  -->
 
-    <style name="StyleButton" parent="AppTheme">
+    <style name="StyleButton_1" parent="AppTheme">
         <item name="android:background">@drawable/style_btn_press_on</item>
-        <item name="android:paddingLeft">@dimen/paddingLeft</item>
-        <item name="android:paddingRight">@dimen/paddingRight</item>
+        <item name="android:paddingLeft">@dimen/paddingLeft1</item>
+        <item name="android:paddingRight">@dimen/paddingRight1</item>
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="StyleButton_GameLevels" parent="AppTheme">
+    <style name="StyleButton_2" parent="AppTheme">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingRight">@dimen/paddingLeft2</item>
+        <item name="android:paddingLeft">@dimen/paddingRight2</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:background">@drawable/style_btn_gamelevels_press_on</item>

@@ -6,10 +6,10 @@
     android:orientation="vertical">
 
     <ImageView
-        android:contentDescription="@string/fon"
         android:id="@+id/iv_gameLevels_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/fon"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/game_levels_background_image" />
 
@@ -35,10 +35,10 @@
 
                 <Button
                     android:id="@+id/button_back"
-                    style="@style/StyleButton"
+                    style="@style/StyleButton_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/back"
+                    android:text="@string/btn_back"
                     android:textAllCaps="false" />
             </LinearLayout>
 
@@ -61,31 +61,31 @@
 
                         <TextView
                             android:id="@+id/textView1"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_one" />
 
                         <TextView
                             android:id="@+id/textView2"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_two" />
 
                         <TextView
                             android:id="@+id/textView3"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_free" />
 
                         <TextView
                             android:id="@+id/textView4"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_fore" />
 
                         <TextView
                             android:id="@+id/textView5"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:text="@string/btn_five" />
 
                     </LinearLayout>
@@ -99,32 +99,32 @@
 
                         <TextView
                             android:id="@+id/textView6"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_six" />
 
 
                         <TextView
                             android:id="@+id/textView7"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_seven" />
 
                         <TextView
                             android:id="@+id/textView8"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_eight" />
 
                         <TextView
                             android:id="@+id/textView9"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_nine" />
 
                         <TextView
                             android:id="@+id/textView10"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_ten" />
                     </LinearLayout>
@@ -138,32 +138,32 @@
 
                         <TextView
                             android:id="@+id/textView11"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_eleven" />
 
 
                         <TextView
                             android:id="@+id/textView12"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twelve" />
 
                         <TextView
                             android:id="@+id/textView13"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_thirteen" />
 
                         <TextView
                             android:id="@+id/textView14"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_fourteen" />
 
                         <TextView
                             android:id="@+id/textView15"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_fifteen" />
                     </LinearLayout>
@@ -177,32 +177,32 @@
 
                         <TextView
                             android:id="@+id/textView16"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_sixteen" />
 
 
                         <TextView
                             android:id="@+id/textView17"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_seventeen" />
 
                         <TextView
                             android:id="@+id/textView18"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_eighteen" />
 
                         <TextView
                             android:id="@+id/textView19"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_nineteen" />
 
                         <TextView
                             android:id="@+id/textView20"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twenty" />
                     </LinearLayout>
@@ -216,32 +216,32 @@
 
                         <TextView
                             android:id="@+id/textView21"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentyOne" />
 
 
                         <TextView
                             android:id="@+id/textView22"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentyTwo" />
 
                         <TextView
                             android:id="@+id/textView23"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentyFree" />
 
                         <TextView
                             android:id="@+id/textView24"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentyFore" />
 
                         <TextView
                             android:id="@+id/textView25"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentyFive" />
                     </LinearLayout>
@@ -255,32 +255,32 @@
 
                         <TextView
                             android:id="@+id/textView26"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentySix" />
 
 
                         <TextView
                             android:id="@+id/textView27"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentySeven" />
 
                         <TextView
                             android:id="@+id/textView28"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentyEight" />
 
                         <TextView
                             android:id="@+id/textView29"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_twentyNine" />
 
                         <TextView
                             android:id="@+id/textView30"
-                            style="@style/StyleButton_GameLevels"
+                            style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_thirty" />
                     </LinearLayout>

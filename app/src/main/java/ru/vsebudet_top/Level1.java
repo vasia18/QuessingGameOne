@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class Level2 extends AppCompatActivity {
+public class Level1 extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

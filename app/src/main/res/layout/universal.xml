@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,5 +11,236 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/fon"
         android:scaleType="centerCrop"
-        android:src="@drawable/game_levels_background_image" />
+        android:src="@drawable/background_level1" />
+
+    <LinearLayout
+        android:id="@+id/container_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_back_1"
+                    style="@style/StyleButton_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/btn_back" />
+
+                <TextView
+                    android:id="@+id/text_levels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="@string/level"
+                    android:textColor="@color/colorButtonStroke1"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lain_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/point_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+                <TextView
+                    android:id="@+id/point_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@drawable/style_amg_universal"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/img_left_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    app:srcCompat="@drawable/blank_rectangle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

@@ -42,7 +42,7 @@
 
         <Button
             android:id="@+id/button_start"
-            style="@style/StyleButton"
+            style="@style/StyleButton_1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

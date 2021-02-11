@@ -11,5 +11,6 @@
     <color name="colorButtonFon1_60">#602FBFF9</color>
     <color name="colorButtonStroke1">#316FC6</color>
     <color name="colorButtonStroke1_60">#60316FC6</color>
+    <color name="black60">#60000000</color>
 </resources>
 

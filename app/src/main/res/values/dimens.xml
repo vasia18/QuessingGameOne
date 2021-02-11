@@ -4,8 +4,10 @@
     <dimen name="textSize">30sp</dimen>
     <dimen name="radiusButton">15sp</dimen>
     <dimen name="strokeButton">2dp</dimen>
-    <dimen name="paddingRight">40dp</dimen>
-    <dimen name="paddingLeft">40dp</dimen>
+    <dimen name="paddingRight1">40dp</dimen>
+    <dimen name="paddingLeft1">40dp</dimen>
+    <dimen name="paddingRight2">10dp</dimen>
+    <dimen name="paddingLeft2">10dp</dimen>
     <dimen name="gameLevelsTextView_layout_width">50dp</dimen>
     <dimen name="gameLevelsTextView_layout_height">50dp</dimen>
     <dimen name="layout_marginRight_15dp">15dp</dimen>
