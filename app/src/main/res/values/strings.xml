@@ -37,5 +37,7 @@
     <string name="btn_thirty">30</string>
 
     <string name="level">Уровень:</string>
+    <string name="text_right">Какой то текс</string>
+    <string name="text_left">Какой то текст</string>
 
 </resources>

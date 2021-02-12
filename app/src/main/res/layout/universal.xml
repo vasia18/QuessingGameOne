@@ -253,6 +253,35 @@
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/blank_rectangle" />
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/layout_marginRight_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_left"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textSize_30sp" />
+
+                <TextView
+                    android:id="@+id/text_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/layout_marginRight_5dp"
+                    android:layout_weight="1"
+                    android:text="@string/text_right"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textSize_30sp" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

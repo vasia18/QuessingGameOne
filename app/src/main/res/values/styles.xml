@@ -24,7 +24,7 @@
         <item name="android:paddingLeft">@dimen/paddingLeft1</item>
         <item name="android:paddingRight">@dimen/paddingRight1</item>
         <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textSize">@dimen/textSize_30sp</item>
         <item name="android:gravity">center</item>
     </style>
 
