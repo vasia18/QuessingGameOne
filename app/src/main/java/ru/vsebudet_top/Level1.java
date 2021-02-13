@@ -3,6 +3,9 @@ package ru.vsebudet_top;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
@@ -10,6 +13,8 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 public class Level1 extends AppCompatActivity {
+
+	Dialog dialog;
 
 	@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 	@Override
@@ -33,5 +38,14 @@ public class Level1 extends AppCompatActivity {
 		Window w = getWindow();
 		w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 		// развернуть игру на весь экран - КОНЕЦ
+
+		//Вызов диалогового окна в начале игры
+		dialog = new Dialog(this); // сздаем новое диалоговое окно
+		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);  //  скрываем заголовок диалогового окна
+		dialog.setContentView(R.layout.previewdialog);  // путь к макету диалогового окна
+		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT)); //прозрачный фон диалогового окна
+		dialog.setCancelable(false);  // окно нельзя закрыть системной кнопкой назад
+		dialog.show(); // показать диалоговое окно
+
 	}
 }
