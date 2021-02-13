@@ -24,6 +24,8 @@
     <dimen name="layout_marginRight_5dp">5dp</dimen>
     <dimen name="layout_marginRight_3dp">3dp</dimen>
 
+    <dimen name="layout_height_600dp">600dp</dimen>
+    <dimen name="layout_height_500dp">500dp</dimen>
     <dimen name="layout_height_250dp">250dp</dimen>
     <dimen name="layout_height_30dp">30dp</dimen>
     <dimen name="layout_height_20dp">20dp</dimen>
