@@ -4,13 +4,16 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Level1 extends AppCompatActivity {
 
@@ -45,6 +48,33 @@ public class Level1 extends AppCompatActivity {
 		dialog.setContentView(R.layout.previewdialog);  // путь к макету диалогового окна
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT)); //прозрачный фон диалогового окна
 		dialog.setCancelable(false);  // окно нельзя закрыть системной кнопкой назад
+
+		// Кнопка которая закрывает диалоговое окно -начало
+		TextView btnclose = (TextView) dialog.findViewById(R.id.btn_close);
+		btnclose.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//обрабатываем нажатие кнопки - начало
+				try {
+					//Вернутся назад к выбору уровня - начало
+					Intent intent = new Intent(Level1.this, GameLevelActivity.class); //создали намеренья для перехода
+					startActivity(intent); //старт намеренья
+					finish(); //закрыть этот класс
+//Вернутся назад к выбору уровня - конец
+				} catch (Exception e) {
+					//Здесь кода небудет (команда из за которой програма зделала ошибку )
+				}
+				dialog.dismiss();//закрываем диалоговое окно
+				//обрабатываем нажатие кнопки = конец
+			}
+		});
+		// Кнопка которая закрывает диалоговое окно - конец
+
+		//кнопка "Продолжить" - начало
+
+		//кнопка "Продолжить" - конец
+
+
 		dialog.show(); // показать диалоговое окно
 
 	}
