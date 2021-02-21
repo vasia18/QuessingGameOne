@@ -9,11 +9,14 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Level1 extends AppCompatActivity {
 
@@ -50,8 +53,8 @@ public class Level1 extends AppCompatActivity {
 		dialog.setCancelable(false);  // окно нельзя закрыть системной кнопкой назад
 
 		// Кнопка которая закрывает диалоговое окно -начало
-		TextView btnclose = (TextView) dialog.findViewById(R.id.btn_close);
-		btnclose.setOnClickListener(new View.OnClickListener() {
+		TextView btn_close = (TextView) dialog.findViewById(R.id.btn_close);
+		btn_close.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				//обрабатываем нажатие кнопки - начало
@@ -62,7 +65,9 @@ public class Level1 extends AppCompatActivity {
 					finish(); //закрыть этот класс
 //Вернутся назад к выбору уровня - конец
 				} catch (Exception e) {
-					//Здесь кода небудет (команда из за которой програма зделала ошибку )
+					//Здесь будет команда команда (будет всплывать сообщение из за которой програма зделала ошибку) - начало
+					Toast.makeText(Level1.this, "Тестовое сообщение окнопка сработала", Toast.LENGTH_SHORT).show();
+					//Здесь будет команда команда (будет всплывать сообщение из за которой програма зделала ошибку) - конец
 				}
 				dialog.dismiss();//закрываем диалоговое окно
 				//обрабатываем нажатие кнопки = конец
@@ -71,7 +76,13 @@ public class Level1 extends AppCompatActivity {
 		// Кнопка которая закрывает диалоговое окно - конец
 
 		//кнопка "Продолжить" - начало
-
+		Button btn_continue = (Button) dialog.findViewById(R.id.btn_continue);
+		btn_continue.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				dialog.dismiss(); //когда нажимают на кнопку продолжить, окно закрывается
+			}
+		});
 		//кнопка "Продолжить" - конец
 
 
