@@ -84,9 +84,29 @@ public class Level1 extends AppCompatActivity {
 			}
 		});
 		//кнопка "Продолжить" - конец
-
-
 		dialog.show(); // показать диалоговое окно
 
+		//кнопка "назад" - начало
+		Button button_back_1 = (Button) findViewById(R.id.button_back_1);
+		button_back_1.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//обрабатываем нажатие кнопки - начало
+				try {
+					//вернутся назад к выбору уровня - начало
+					Intent intent = new Intent(Level1.this, GameLevelActivity.class); //создали намерение для перехода на другой уровень
+					startActivity(intent); //старт намерения
+					finish(); //закрыть этот класс
+
+					//вернутся назад к выбору уровня - конец
+//обрабатываем нажатие кнопки - конец
+				} catch (Exception e) {
+					// код на случай если кнопка не будет работать - начало
+
+					// код на случай если кнопка не будет работать - конец
+				}
+			}
+		});
+		//кнопка "назад" - конец
 	}
 }
