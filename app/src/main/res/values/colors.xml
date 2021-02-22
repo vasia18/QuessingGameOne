@@ -12,5 +12,7 @@
     <color name="colorButtonStroke1">#316FC6</color>
     <color name="colorButtonStroke1_60">#60316FC6</color>
     <color name="black60">#60000000</color>
+
+    <color name="splashScreen_color">#C5EEFB</color>
 </resources>
 
