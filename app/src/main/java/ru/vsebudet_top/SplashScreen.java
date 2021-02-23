@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SplashScreen extends AppCompatActivity {
 
-	Animation top_animation;  // прописываем
+	Animation topAnim;  // прописываем
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,7 @@ public class SplashScreen extends AppCompatActivity {
 		SystemClock.sleep(TimeUnit.SECONDS.toMillis(3));  // ставим таймер на Splash screen
 
 		//анимация
-		Context context;
-		top_animation = AnimationUtils.loadAnimation(this, R.anim.top_animation);
-
+		//topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
 
 		Intent intent = new Intent(this, MainActivity.class); //обьявляем намеренья перехода из тикущего окна (SplashScreen.java) в окно MainActivity.java
 		startActivity(intent); //запускаем намеренья
