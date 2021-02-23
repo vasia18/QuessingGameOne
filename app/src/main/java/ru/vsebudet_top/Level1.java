@@ -28,6 +28,10 @@ public class Level1 extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.universal);
 
+		//создаем переменную text_levels
+		TextView text_levels = findViewById(R.id.text_levels);
+		text_levels.setText(R.string.level1); //установили текст
+
 		// Определяем в коде img_left_rec что бы потом книму обратится
 		final ImageView img_left_rec = findViewById(R.id.img_left_rec);
 		// код который скругляет углы Левой картинки
@@ -99,7 +103,7 @@ public class Level1 extends AppCompatActivity {
 					finish(); //закрыть этот класс
 
 					//вернутся назад к выбору уровня - конец
-//обрабатываем нажатие кнопки - конец
+					//обрабатываем нажатие кнопки - конец
 				} catch (Exception e) {
 					// код на случай если кнопка не будет работать - начало
 
@@ -108,5 +112,26 @@ public class Level1 extends AppCompatActivity {
 			}
 		});
 		//кнопка "назад" - конец
+	}
+	//системная кнопка "назад" - начало
+
+	@Override
+	public void onBackPressed() {
+		//Ctrl+O
+		super.onBackPressed();
+		try {
+			//вернутся назад к выбору уровня - начало
+			Intent intent = new Intent(Level1.this, GameLevelActivity.class); //создали намерение для перехода на другой уровень
+			startActivity(intent); //старт намерения
+			finish(); //закрыть этот класс
+			//вернутся назад к выбору уровня - конец
+			//обрабатываем нажатие кнопки - конец
+		} catch (Exception e) {
+			// код на случай если кнопка не будет работать - начало
+
+			// код на случай если кнопка не будет работать - конец
+
+			//системная кнопка "назад" - назад
+		}
 	}
 }
