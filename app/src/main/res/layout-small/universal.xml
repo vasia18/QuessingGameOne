@@ -234,7 +234,7 @@
                 <ImageView
                     android:id="@+id/img_left_rec"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/layout_height_250dp"
+                    android:layout_height="@dimen/layout_height_200dp"
                     android:layout_marginEnd="@dimen/layout_marginRight_5dp"
                     android:layout_weight="1"
                     android:background="@drawable/style_amg_universal"
