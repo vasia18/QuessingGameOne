@@ -8,6 +8,13 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+/*
+Мое первое детское приложение "ВИКТОРИНА"
+@author avi26
+@author avi26@mail.ru
+@version 1.0
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
