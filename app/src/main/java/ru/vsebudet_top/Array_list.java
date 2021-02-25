@@ -20,8 +20,17 @@ public class Array_list {
 	final int[] power_1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
 	//код для текста
-	final String[] text_1 = {
+	final int[] text_1 = {
 			R.string.level1_text1,
+			R.string.level1_text2,
+			R.string.level1_text3,
+			R.string.level1_text4,
+			R.string.level1_text5,
+			R.string.level1_text6,
+			R.string.level1_text7,
+			R.string.level1_text8,
+			R.string.level1_text9,
+			R.string.level1_text10,
 
 	};
 
