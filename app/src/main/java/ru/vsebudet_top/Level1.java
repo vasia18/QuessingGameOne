@@ -18,8 +18,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.logging.Logger;
+
 public class Level1 extends AppCompatActivity {
 
+	public static final String TAG = "MyApp";
 	Dialog dialog;
 
 	@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -47,6 +50,7 @@ public class Level1 extends AppCompatActivity {
 		// Разверуть игру на весь экран - НАЧАЛО
 		Window w = getWindow();
 		w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+		Log.i(TAG, "развернуть игру на весь экран для записи в журнале");
 		// развернуть игру на весь экран - КОНЕЦ
 
 		//Вызов диалогового окна в начале игры
@@ -68,7 +72,10 @@ public class Level1 extends AppCompatActivity {
 					startActivity(intent); //старт намеренья
 					finish(); //закрыть этот класс
 //Вернутся назад к выбору уровня - конец
+					Log.i(TAG, "Сработала кнопка вернутся к выбору уровня");
 				} catch (Exception e) {
+					e.printStackTrace();
+					Log.e(TAG, "получено исключение", e);
 					//Здесь будет команда команда (будет всплывать сообщение из за которой програма зделала ошибку) - начало
 					Toast.makeText(Level1.this, "Тестовое сообщение окнопка сработала", Toast.LENGTH_SHORT).show();
 					//Здесь будет команда команда (будет всплывать сообщение из за которой програма зделала ошибку) - конец
@@ -101,12 +108,12 @@ public class Level1 extends AppCompatActivity {
 					Intent intent = new Intent(Level1.this, GameLevelActivity.class); //создали намерение для перехода на другой уровень
 					startActivity(intent); //старт намерения
 					finish(); //закрыть этот класс
-
 					//вернутся назад к выбору уровня - конец
 					//обрабатываем нажатие кнопки - конец
 				} catch (Exception e) {
+					e.printStackTrace(); //помогает понять, где возникла фактическая проблема
 					// код на случай если кнопка не будет работать - начало
-
+					Log.e(TAG, "Получено исключение", e);
 					// код на случай если кнопка не будет работать - конец
 				}
 			}
@@ -127,8 +134,9 @@ public class Level1 extends AppCompatActivity {
 			//вернутся назад к выбору уровня - конец
 			//обрабатываем нажатие кнопки - конец
 		} catch (Exception e) {
+			e.printStackTrace(); //помогает понять, где возникла фактическая проблема
 			// код на случай если кнопка не будет работать - начало
-
+			Log.e(TAG, "Получено исключение", e);
 			// код на случай если кнопка не будет работать - конец
 
 			//системная кнопка "назад" - назад

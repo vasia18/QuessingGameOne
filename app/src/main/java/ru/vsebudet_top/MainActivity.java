@@ -2,6 +2,7 @@ package ru.vsebudet_top;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -10,14 +11,17 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 /*
-* Мое первое детское приложение "ВИКТОРИНА"
-* @author avi26
-* @author avi26@mail.ru
-* @version 1.0
+ * Мое первое детское приложение "ВИКТОРИНА"
+ * @author avi26
+ * @author avi26@mail.ru
+ * @version 1.0
  */
 
 public class MainActivity extends AppCompatActivity {
+
+	private static final String TAG = "MyApp";
 
 	private long backPressedTime; // Создаем переменную
 	private Toast backToast;
@@ -37,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 					startActivity(intent);
 					finish();
 				} catch (Exception e) {
-					e.printStackTrace();
+					e.printStackTrace(); //помогает понять, где возникла фактическая проблема
 				} // Конец конструкции
 			}
 		});
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
 			backToast.show();
 		}
 		backPressedTime = System.currentTimeMillis(); // Здесь мы используем переменную которую написал выше.
+		Log.i(TAG,"Программа закончила работу");
 	}
 // Системная кнопка покинуть приоложение КОНЕЦ
 }

@@ -2,6 +2,7 @@ package ru.vsebudet_top;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class GameLevelActivity extends AppCompatActivity {
+
+	private static final String TAG = "MyApp";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class GameLevelActivity extends AppCompatActivity {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				Log.i(TAG, "Сработала кнопка назад с GameLevelActivity на MainActivity");
 			}
 		});
 		//Кнопка для перехода на 1 уровень НАЧАЛО
@@ -46,10 +50,11 @@ public class GameLevelActivity extends AppCompatActivity {
 					startActivity(intent);
 					finish();
 				} catch (Exception e) {
-					e.printStackTrace();
+					e.printStackTrace(); //помогает понять, где возникла фактическая проблема
 				}
 			}
 		});  // Кнопка для перехода на 1 уровень КОНЕЦ
+		Log.i(TAG, "Кнопка перехода на 1 уровень");
 	}
 
 	// Системная кнопка "Назад" начало
@@ -61,10 +66,12 @@ public class GameLevelActivity extends AppCompatActivity {
 			startActivity(intent);
 			finish();
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.printStackTrace(); //помогает понять, где возникла фактическая проблема
+
 		}
 		//Конец конструкции }catch
 		super.onBackPressed();
+		Log.i(TAG, "Сработала системная кнопка назад");
 	}
 	// Системная кнопка "Назад" конец
 }
