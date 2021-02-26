@@ -16,11 +16,13 @@ public class Array_list {
 			R.drawable.onelevel_10
 	};
 
-	//код для нового масива с цыфрами - начало
-	final int[] power_1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+	//код для масива с цыфрами - начало
+	//final int[] power_1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	//код для масива с цифрами - конец
 
 	//код для текста
 	final int[] text_1 = {
+			R.string.level1_text10,
 			R.string.level1_text1,
 			R.string.level1_text2,
 			R.string.level1_text3,
@@ -30,7 +32,6 @@ public class Array_list {
 			R.string.level1_text7,
 			R.string.level1_text8,
 			R.string.level1_text9,
-			R.string.level1_text10,
 
 	};
 
