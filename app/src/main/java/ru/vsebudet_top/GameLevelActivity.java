@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +25,7 @@ public class GameLevelActivity extends AppCompatActivity {
 		Window w = getWindow();
 		w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-		Button button_back = findViewById(R.id.button_back);
+		ImageButton button_back = findViewById(R.id.button_back);
 		button_back.setOnClickListener(new View.OnClickListener() {  // Вешаем слушатель на кнопку.
 			@Override
 			public void onClick(View v) {

@@ -33,19 +33,18 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <ImageButton
                     android:id="@+id/button_back"
                     style="@style/StyleButton_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_back"
-                    android:textAllCaps="false" />
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/layout_height_40dp"
+                    android:src="@drawable/arrow_back_24" />
             </LinearLayout>
 
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="30dp">
 
                 <LinearLayout
                     android:id="@+id/container_4"
@@ -65,28 +64,29 @@
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
                             android:text="@string/btn_one" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView2"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_two" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView3"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
-                            android:text="@string/btn_free" />
+                            android:src="@drawable/padlock" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView4"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
-                            android:text="@string/btn_fore" />
+                            android:src="@drawable/padlock" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView5"
                             style="@style/StyleButton_2"
-                            android:text="@string/btn_five" />
+                            android:src="@drawable/padlock" />
 
                     </LinearLayout>
 
@@ -97,35 +97,40 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView6"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_six" />
 
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView7"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_seven" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView8"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_eight" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView9"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_nine" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView10"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_ten" />
                     </LinearLayout>
 
@@ -136,35 +141,40 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView11"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_eleven" />
 
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView12"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twelve" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView13"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_thirteen" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView14"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_fourteen" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView15"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_fifteen" />
                     </LinearLayout>
 
@@ -175,35 +185,40 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView16"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_sixteen" />
 
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView17"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_seventeen" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView18"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_eighteen" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView19"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_nineteen" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView20"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twenty" />
                     </LinearLayout>
 
@@ -214,35 +229,40 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView21"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentyOne" />
 
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView22"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentyTwo" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView23"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentyFree" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView24"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentyFore" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView25"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentyFive" />
                     </LinearLayout>
 
@@ -253,35 +273,40 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView26"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentySix" />
 
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView27"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentySeven" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView28"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentyEight" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView29"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_twentyNine" />
 
-                        <TextView
+                        <ImageButton
                             android:id="@+id/textView30"
                             style="@style/StyleButton_2"
                             android:layout_marginEnd="@dimen/layout_marginRight_15dp"
+                            android:src="@drawable/padlock"
                             android:text="@string/btn_thirty" />
                     </LinearLayout>
                 </LinearLayout>

@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 			backToast.show();
 		}
 		backPressedTime = System.currentTimeMillis(); // Здесь мы используем переменную которую написал выше.
-		Log.i(TAG,"Программа закончила работу");
+		Log.i(TAG, "Программа закончила работу");
 	}
 // Системная кнопка покинуть приоложение КОНЕЦ
 }

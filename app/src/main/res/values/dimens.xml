@@ -31,6 +31,7 @@
     <dimen name="layout_height_600dp">600dp</dimen>
     <dimen name="layout_height_500dp">500dp</dimen>
     <dimen name="layout_height_200dp">200dp</dimen>
+    <dimen name="layout_height_40dp">40dp</dimen>
     <dimen name="layout_height_30dp">30dp</dimen>
     <dimen name="layout_height_20dp">20dp</dimen>
     <dimen name="layout_height_10dp">10dp</dimen>
