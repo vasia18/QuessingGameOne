@@ -88,7 +88,7 @@ public class Level1 extends AppCompatActivity {
 					Intent intent = new Intent(Level1.this, GameLevelActivity.class); //создали намеренья для перехода
 					startActivity(intent); //старт намеренья
 					finish(); //закрыть этот класс
-//Вернутся назад к выбору уровня - конец
+					//Вернутся назад к выбору уровня - конец
 					Log.i(TAG, "Сработала кнопка вернутся к выбору уровня");
 				} catch (Exception e) {
 					e.printStackTrace();
