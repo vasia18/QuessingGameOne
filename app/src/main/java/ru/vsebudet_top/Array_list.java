@@ -20,7 +20,7 @@ public class Array_list {
 	//final int[] power_1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 	//код для масива с цифрами - конец
 
-	//код для текста
+	//код для текста
 	final int[] text_1 = {
 			R.string.level1_text10,
 			R.string.level1_text1,

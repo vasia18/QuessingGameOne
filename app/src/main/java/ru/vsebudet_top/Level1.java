@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -77,7 +78,7 @@ public class Level1 extends AppCompatActivity {
 		dialog.setCancelable(false);  // окно нельзя закрыть системной кнопкой назад
 
 		// Кнопка которая закрывает диалоговое окно -начало
-		TextView btn_close = (TextView) dialog.findViewById(R.id.btn_close);
+		ImageButton btn_close = (ImageButton) dialog.findViewById(R.id.btn_close);
 		btn_close.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

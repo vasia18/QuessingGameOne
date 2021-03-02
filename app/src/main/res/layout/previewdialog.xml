@@ -18,14 +18,14 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
+        <ImageButton
             android:id="@+id/btn_close"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="end"
             android:background="@drawable/style_btn_press_on"
             android:gravity="center"
-            android:text="@string/x"
+            android:src="@drawable/ic_baseline_clear_24"
             android:textColor="@color/colorWhite"
             android:textStyle="bold" />
 
