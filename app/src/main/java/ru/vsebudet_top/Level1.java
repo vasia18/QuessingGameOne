@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -13,6 +14,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -30,8 +33,11 @@ public class Level1 extends AppCompatActivity {
 	Dialog dialog;
 	public int numLeft_int; //переменная для левой картинки + текст
 	public int numRight_int; //переменная для правой картинки + текст
+
 	Array_list mArray_list = new Array_list(); //создали новый обьект изкласса Array_list
+
 	Random mRandom = new Random();// для генерации случайых чисел
+	public int counter = 0; // счетчик правильных ответов
 
 
 	@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -102,7 +108,6 @@ public class Level1 extends AppCompatActivity {
 			}
 		});
 		// Кнопка которая закрывает диалоговое окно - конец
-
 		//кнопка "Продолжить" - начало
 		Button btn_continue = (Button) dialog.findViewById(R.id.btn_continue);
 		btn_continue.setOnClickListener(new View.OnClickListener() {
@@ -135,8 +140,11 @@ public class Level1 extends AppCompatActivity {
 				}
 				Log.i(TAG, "Сработала кнопка назад");
 			}
-		});
-		//кнопка "назад" - конец
+		}); //кнопка "назад" - конец
+
+		//подключаем анимацию - начало
+		final Animation anim = AnimationUtils.loadAnimation(Level1.this, R.anim.alpfa);
+		//подключаем анимацию - конец
 
 		//генерируем случайное число от 0 до 9
 		numLeft_int = mRandom.nextInt(10);
