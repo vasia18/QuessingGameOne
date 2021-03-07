@@ -11,6 +11,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -142,6 +143,15 @@ public class Level1 extends AppCompatActivity {
 			}
 		}); //кнопка "назад" - конец
 
+		//масив для прогреса игры - начало
+		final int[] progress = {
+				R.id.point_1, R.id.point_2, R.id.point_3, R.id.point_4, R.id.point_5,
+				R.id.point_6, R.id.point_7, R.id.point_8, R.id.point_9, R.id.point_10,
+				R.id.point_11, R.id.point_12, R.id.point_13, R.id.point_14, R.id.point_15,
+				R.id.point_16, R.id.point_17, R.id.point_18, R.id.point_19, R.id.point_20,
+		};
+		//масив для прогреса игры - конец
+
 		//подключаем анимацию - начало
 		final Animation anim = AnimationUtils.loadAnimation(Level1.this, R.anim.alpfa);
 		//подключаем анимацию - конец
@@ -163,8 +173,60 @@ public class Level1 extends AppCompatActivity {
 
 		//Достаем из масива картинку
 		img_right_rec.setImageResource(mArray_list.images_level_1[numRight_int]);
-		//Достаем из масива текст
-		textView_raight.setText(mArray_list.text_1[numRight_int]);
+		textView_raight.setText(mArray_list.text_1[numRight_int]);//Достаем из масива текст
+
+		//обрабатываем нажатие на левую кнопку - начало
+		img_left_rec.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				//условия касания картинки - начало
+				if (event.getAction() == MotionEvent.ACTION_DOWN) {
+
+					//если коснулся картинки - начало
+					img_right_rec.setEnabled(false);//блокируем правую картинку
+					if (numLeft_int > numRight_int) {
+						img_left_rec.setImageResource(R.drawable.img_true);
+
+					} else {
+						img_left_rec.setImageResource(R.drawable.img_false);
+					}
+					//если коснулся картинки - конец
+					Log.d(TAG, "onTouch:если коснулся картинки");
+				} else if (event.getAction() == MotionEvent.ACTION_UP) {
+					//если отпустил палец - начало
+					if (numLeft_int > numRight_int) {
+						//если левая картинка больше
+						if (counter < 20) {
+							counter = counter + 1;
+						}
+						//закрашиваем прогресс серым цветом  - начало
+						for (int i = 0; i < 20; i++) {
+							TextView tv = findViewById(progress[i]);
+							tv.setBackgroundResource(R.drawable.style_points);
+						}
+						Log.d(TAG, "onTouch:закрашиваем серым");
+						//закрашиваем прогресс серым цветом  - конец
+
+						//определяем правельные ответы  и закрашиваем зеленым цветом - начало
+						for (int i = 0; i < counter; i++) {
+							TextView tv = findViewById(progress[i]);
+							tv.setBackgroundResource(R.drawable.style_points_green);
+						}
+						Log.d(TAG, "onTouch:определяем правельные ответы, закрашиваем зеленым");
+						//определяем правельные ответы и закрашиваем в зеленый цвет - конец
+					} else {
+						//если левая картинка меньше
+					}
+					Log.d(TAG, "onTouch:если отпустил палец");
+					//если отпустил полец - конец
+
+
+				}
+				//условие касания картинки - конец
+				return true;
+			}
+		});
+		//обрабатываем нажатие на левую кнопку - конец
 
 
 	}
@@ -189,5 +251,6 @@ public class Level1 extends AppCompatActivity {
 
 			//системная кнопка "назад" - назад
 		}
+		Log.d(TAG, "onBackPressed:вернутся назад к выбору уровня");
 	}
 }
