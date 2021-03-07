@@ -158,17 +158,25 @@ public class Level1 extends AppCompatActivity {
 
 		//генерируем случайное число от 0 до 9
 		numLeft_int = mRandom.nextInt(10);
+		Log.d(TAG, "onCreate:генерируем случайное число от 0 до 9 (numLeft_int) ");
+
 		//Достаем из масива картинку
 		img_left_rec.setImageResource(mArray_list.images_level_1[numLeft_int]);
+		Log.d(TAG, "onCreate:Достаем из масива картинку");
+
 		//Достаем из масива текст
 		textView_left.setText(mArray_list.text_1[numLeft_int]);
+		Log.d(TAG, "onCreate:Достаем из масива текст");
+
 		//Генерируем случайное число то 0 до 9
 		numRight_int = mRandom.nextInt(10);
+		Log.d(TAG, "onCreate:генерируем случайное число от 0 до 9 (numRight_int)");
 
 		//Цикл с предусловием, проверяющий равенства чисел - начало
 		while (numLeft_int == numRight_int) {
 			numRight_int = mRandom.nextInt(10);
 		}
+		Log.d(TAG, "onCreate:Цикл с предусловием, проверяющий равенства чисел");
 		//Цикл с предусловием, проверяющий равенства чисел - конец
 
 		//Достаем из масива картинку
@@ -216,19 +224,42 @@ public class Level1 extends AppCompatActivity {
 						//определяем правельные ответы и закрашиваем в зеленый цвет - конец
 					} else {
 						//если левая картинка меньше
+						if (counter > 0) {
+							if (counter == 1) {
+								counter = 0;
+							} else {
+								counter = counter - 2;
+							}
+						}
+						//закрашиваем прогресс серым цветом  - начало
+						for (int i = 0; i < 19; i++) {
+							TextView tv = findViewById(progress[i]);
+							tv.setBackgroundResource(R.drawable.style_points);
+						}
+						Log.d(TAG, "onTouch:закрашиваем серым");
+						//закрашиваем прогресс серым цветом  - конец
+
+						//определяем правельные ответы  и закрашиваем зеленым цветом - начало
+						for (int i = 0; i < counter; i++) {
+							TextView tv = findViewById(progress[i]);
+							tv.setBackgroundResource(R.drawable.style_points_green);
+						}
+						Log.d(TAG, "onTouch:определяем правельные ответы, закрашиваем зеленым");
+						//определяем правельные ответы и закрашиваем в зеленый цвет - конец
 					}
 					Log.d(TAG, "onTouch:если отпустил палец");
 					//если отпустил полец - конец
+					if (counter == 20) {
+						//ВЫХОД ИЗ УРОВНЯ
+					} else {
 
-
+					}
 				}
 				//условие касания картинки - конец
 				return true;
 			}
 		});
 		//обрабатываем нажатие на левую кнопку - конец
-
-
 	}
 
 	//системная кнопка "назад" - начало
