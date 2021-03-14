@@ -47,6 +47,7 @@ public class Level1 extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.universal);
 
+
 		//создаем переменную text_levels
 		TextView text_levels = findViewById(R.id.text_levels);
 		//установили текст
@@ -201,6 +202,7 @@ public class Level1 extends AppCompatActivity {
 					//если коснулся картинки - конец
 					Log.d(TAG, "onTouch:если коснулся картинки");
 				} else if (event.getAction() == MotionEvent.ACTION_UP) {
+
 					//если отпустил палец - начало
 					if (numLeft_int > numRight_int) {
 						//если левая картинка больше
@@ -252,7 +254,24 @@ public class Level1 extends AppCompatActivity {
 					if (counter == 20) {
 						//ВЫХОД ИЗ УРОВНЯ
 					} else {
+						numLeft_int = mRandom.nextInt(10);//генерируем случайное число
+						img_left_rec.setImageResource(mArray_list.images_level_1[numLeft_int]);// дстаем из масива картинку
+						img_left_rec.startAnimation(anim);//вызываем анимацию
 
+						textView_left.setText(mArray_list.text_1[numLeft_int]);//достаем из масива текст
+
+						numRight_int = mRandom.nextInt(10);//генерируем случайное число
+						//цикл с предусловием, проверяющий равенства чисел - начало
+						while (numLeft_int == numRight_int) {
+							numRight_int = mRandom.nextInt(10);
+						}
+						//цикл с предусловием, проверяющий равенства чисел - конец
+						//достаем из масива картинку
+						img_right_rec.setImageResource(mArray_list.images_level_1[numRight_int]);
+						img_right_rec.startAnimation(anim);
+						//достаем из масива текст
+						textView_raight.setText(mArray_list.text_1[numRight_int]);
+						img_right_rec.setEnabled(true);//включаем обратно правую картинку
 					}
 				}
 				//условие касания картинки - конец
