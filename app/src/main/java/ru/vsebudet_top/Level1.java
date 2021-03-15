@@ -50,10 +50,9 @@ public class Level1 extends AppCompatActivity {
 
 		//создаем переменную text_levels
 		TextView text_levels = findViewById(R.id.text_levels);
-		//установили текст
-		text_levels.setText(R.string.level1);
-		// Определяем в коде img_left_rec что бы потом книму обратится
-		final ImageView img_left_rec = findViewById(R.id.img_left_rec);
+		text_levels.setText(R.string.level1);//установили текст
+
+		final ImageView img_left_rec = findViewById(R.id.img_left_rec); // Определяем в коде img_left_rec что бы потом книму обратится
 
 		// код который скругляет углы Левой картинки
 		img_left_rec.setClipToOutline(true);
