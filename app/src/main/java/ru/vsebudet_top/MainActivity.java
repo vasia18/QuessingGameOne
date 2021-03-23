@@ -1,6 +1,8 @@
 package ru.vsebudet_top;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,15 +31,21 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main); //Подключаем activity_main к MainActivity.java
-		Button button_start = findViewById(R.id.button_start); // Находим кнопку, которая при нажатии будет переходить на другое Activity
+		//Подключаем activity_main к MainActivity.java
+		setContentView(R.layout.activity_main);
+		// Находим кнопку, которая при нажатии будет переходить на другое Activity
+		Button button_start = findViewById(R.id.button_start);
 		button_start.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				try {
+					Context context;
+					//подключаем звук на кнопку
+					MediaPlayer md_1 = MediaPlayer.create(MainActivity.this,R.raw.press_button );
+					md_1.start();
+
 					// Прописываем с какого Activity на какое Activity будет переходить при нажатии на кнопку
-					Intent intent = new Intent(MainActivity.this,
-							GameLevelActivity.class);
+					Intent intent = new Intent(MainActivity.this, GameLevelActivity.class);
 					startActivity(intent);
 					finish();
 				} catch (Exception e) {

@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -91,6 +92,10 @@ public class Level1 extends AppCompatActivity {
 			public void onClick(View v) {
 				//обрабатываем нажатие кнопки - начало
 				try {
+					Context context;
+					//Прописываем звук на кнопку
+					MediaPlayer mp4 = MediaPlayer.create(Level1.this, R.raw.press_button);
+					mp4.start();
 					//Вернутся назад к выбору уровня - начало
 					Intent intent = new Intent(Level1.this, GameLevelActivity.class); //создали намеренья для перехода
 					startActivity(intent); //старт намеренья
@@ -114,19 +119,32 @@ public class Level1 extends AppCompatActivity {
 		btn_continue.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				dialog.dismiss(); //когда нажимают на кнопку продолжить, окно закрывается
+				Context context;
+
+				//Вешаем звук на кнопку
+				MediaPlayer mp5 = MediaPlayer.create(Level1.this, R.raw.press_button);
+				mp5.start();
+
+				//когда нажимают на кнопку продолжить, окно закрывается
+				dialog.dismiss();
 			}
 		});
 		//кнопка "Продолжить" - конец
 		dialog.show(); // показать диалоговое окно
 
 		//кнопка "назад" - начало
+		//Находим кнопку по ссылке
 		Button button_back_1 = (Button) findViewById(R.id.button_back_1);
+		//Вешаем слушатель на кнопку
 		button_back_1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				//обрабатываем нажатие кнопки - начало
 				try {
+					Context context;
+					//Прописываем звук на кнопку
+					MediaPlayer mp5 = MediaPlayer.create(Level1.this, R.raw.press_button);
+					mp5.start();
 					//вернутся назад к выбору уровня - начало
 					Intent intent = new Intent(Level1.this, GameLevelActivity.class); //создали намерение для перехода на другой уровень
 					startActivity(intent); //старт намерения
